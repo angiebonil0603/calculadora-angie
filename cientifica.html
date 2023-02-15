@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Calculadora Cientifica</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Calculadora Científica para realizar todo tipo de cálculos mas complejos :).">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://calculadora.ar/sitios/calculadora/libs/bootstrap.min.css" />
+<link rel="shortcut icon" href="https://calculadora.ar/sitios/calculadora/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://calculadora.ar/sitios/calculadora/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://calculadora.ar/sitios/calculadora/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://calculadora.ar/sitios/calculadora/images/favicon-16x16.png">
+<link rel="manifest" href="https://calculadora.ar/manifest.json">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162768318-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-162768318-1');
+</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="https://calculadora.er/cientifica">Calculadora</a>
+        <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="https://calculadora.er">Inicio</a>
+                </li>
+                <li class="nav-item  active ">
+                    <a class="nav-link" href="https://calculadora.er/cientifica">Calculadora Cientifica</a>
+                </li>
+           
+            </ul>
+          
+        </div>
+    </div>
+</nav><br><br><br>
+<div class="container">
+    <div class="main">
+    <div id="display" class="display">0</div>
+    <div id="key" class="keys">
+        <div class="row">
+            <div class="col p-0 mr-1"><button class="operator" id="rad">Rad</button></div>
+            <div class="col p-0 mr-1"><button class="operator" id="deg">Deg</button></div>
+            <div class="col p-0 mr-1"><button class="operator">x!</button></div>
+            <div class="col p-0 mr-1"><button class="operator">(</button></div>
+            <div class="col p-0 mr-1"><button class="operator">)</button></div>
+            <div class="col p-0 mr-1"><button class="operator">%</button></div>
+            <div class="col p-0 mr-1"><button class="operator">AC</button></div>
+        </div>
+        <div class="row">
+            <div class="col p-0 mr-1"><button class="operator">Inv</button></div>
+            <div class="col p-0 mr-1"><button class="function">sin</button></div>
+            <div class="col p-0 mr-1"><button class="function">ln</button></div>
+            <div class="col p-0 mr-1"><button class="digit">7</button></div>
+            <div class="col p-0 mr-1"><button class="digit">8</button></div>
+            <div class="col p-0 mr-1"><button class="digit">9</button></div>
+            <div class="col p-0 mr-1"><button class="operator">÷</button></div>
+        </div>
+        <div class="row">
+            <div class="col p-0 mr-1"><button class="operator">π</button></div>
+            <div class="col p-0 mr-1"><button class="function">cos</button></div>
+            <div class="col p-0 mr-1"><button class="function">log</button></div>
+            <div class="col p-0 mr-1"><button class="digit">4</button></div>
+            <div class="col p-0 mr-1"><button class="digit">5</button></div>
+            <div class="col p-0 mr-1"><button class="digit">6</button></div>
+            <div class="col p-0 mr-1"><button class="operator">×</button></div>
+        </div>
+        <div class="row">
+            <div class="col p-0 mr-1"><button class="operator">e</button></div>
+            <div class="col p-0 mr-1"><button class="function">tan</button></div>
+            <div class="col p-0 mr-1"><button class="function">√</button></div>
+            <div class="col p-0 mr-1"><button class="digit">1</button></div>
+            <div class="col p-0 mr-1"><button class="digit">2</button></div>
+            <div class="col p-0 mr-1"><button class="digit">3</button></div>
+            <div class="col p-0 mr-1"><button class="operator">-</button></div>
+        </div>
+        <div class="row">
+            <div class="col p-0 mr-1"><button class="function">Ans</button></div>
+            <div class="col p-0 mr-1"><button class="operator">EXP</button></div>
+            <div class="col p-0 mr-1"><button class="operator">x<sup>y</sup></button></div>
+            <div class="col p-0 mr-1"><button class="digit">0</button></div>
+            <div class="col p-0 mr-1"><button class="digit">.</button></div>
+            <div class="col p-0 mr-1"><button id="equals" class="operator">=</button></div>
+            <div class="col p-0 mr-1"><button class="operator">+</button></div>
+        </div>
+    </div>
+</div>
+<div class="card mt-3">
+    <div class="card-header">
+        <h3 class="mb-0">Calculadora Científica</h3>
+    </div>
+    <div class="card-body">
+        ¿PARA SIRVE ESTA CALCULADORA CIENTIETIFICA?<br><br>
+        LA CALCULADORA TE PERMITE REALIZAR TODO TIPO DE OPERACIONEZ MATEMATICAS MAS COMPLEJAS :).
+        <br><br>
+        SI NECESITAS UNA CALCULADORA MAS SIMPLE <a href="https://calculadora.er">Calculadora Simple</a>.
+    </div>
+</div>
+</div>
+<
+<script src="https://calculadora.ar/sitios/calculadora/libs/jquery.min.js"></script>
+<script src="https://calculadora.ar/sitios/calculadora/libs/bootstrap.bundle.min.js"></script>
+<script src="https://calculadora.ar/vendor/adminux/resources/libs/feather.min.js"></script>
+<script src="https://calculadora.ar/sitios/calculadora/app.1597253677.js"></script>
+<style>
+.main{
+    border: 0.03px solid buttonface;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 4px 4px #f2f0f0;
+    font-family: sans-serif;
+    display: block;
+    margin: auto;
+}
+
+.display{
+    border: 0.001em solid buttonface;
+    height: 70px;
+    box-shadow: 0px 1px 4px #f2f0f0;
+    text-align: right;
+    font-size: 2.5em;
+    padding: 6px 15px 0px 2px;
+}
+.keys{margin: auto;padding: 0;margin-top: 15px;}
+button{
+    padding: 10px 0;
+    width:100%;
+    margin: 0px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    border: 1px solid #f2f0f0;
+    border-radius: 2px;
+    outline: 0;
+    color: #212529;
+    font-family: sans-serif;
+}
+
+.operator{background-color: buttonface;}
+.digit{background-color: #f8f8f8;}
+#equals{color: #fff;background-color: #701abc;}
+</style>
+<script src="https://calculadora.ar/sitios/calculadora/cientifica.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Calculadora</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Calculadora en lineas para sumar, restar, multiplicar y dividir.">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://calculadora.ar/sitios/calculadora/libs/bootstrap.min.css" />
+<link rel="shortcut icon" href="https://calculadora.ar/sitios/calculadora/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://calculadora.ar/sitios/calculadora/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://calculadora.ar/sitios/calculadora/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://calculadora.ar/sitios/calculadora/images/favicon-16x16.png">
+<link rel="manifest" href="https://calculadora.ar/manifest.json">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162768318-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-162768318-1');
+</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="https://calculadora.er">Calculadora</a>
+        <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item  active ">
+                    <a class="nav-link" href="https://calculadora.er">Inicio</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="https://calculadora.er/cientifica">Calculadora Científica</a>
+                </li>
+              
+            </ul>
+       
+        </div>
+    </div>
+</nav><br><br><br>
+<div class="container">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-8 col-lg-8 px-0">
+            <div class="card" id="calculator">
+                <div class="card-header">
+                    <div class="input-group">
+                        <input type="text" class="col-8 form-control form-control-lg text-right" id="calc_numbers" aria-label="formula" readonly>
+                        <input type="text" class="col-4 form-control form-control-lg text-right font-weight-bold px-1" id="calc_show_result2" aria-label="formula" readonly>
+                    </div>
+                </div>
+                <div class="card-body text-center p-0 m-0">
+                    <div class="row m-3 mb-3">
+                        <button class="col btn btn-danger btn-lg mr-3 pt-1" type="button" id="calc_trash" aria-label="limpiar"><span data-feather="trash-2"></span></button>
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="(">(</button>
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label=")">)</button>
+                        <button class="col btn btn-warning btn-lg pt-1" type="button" id="calc_back" aria-label="retroceder 1"><span data-feather="delete"></span></button>
+                    </div>
+                    <div class="row m-3 mb-3">
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="7">7</button>
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="8">8</button>
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="9">9</button>
+                        <button class="col btn btn-info btn-lg calc_add" type="button" aria-label="dividir">/</button>
+                    </div>
+                    <div class="row m-3 mb-3">
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="4">4</button>
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="5">5</button>
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="6">6</button>
+                        <button class="col btn btn-info btn-lg calc_add" type="button" aria-label="sumar">+</button>
+                    </div>
+                    <div class="row m-3 mb-3">
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="1">1</button>
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="2">2</button>
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="3">3</button>
+                        <button class="col btn btn-info btn-lg calc_add" type="button" aria-label="restar">-</button>
+                    </div>
+                    <div class="row m-3 mb-3">
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label="0">0</button>
+                        <button class="col btn btn-dark btn-lg mr-3 calc_add" type="button" aria-label=".">.</button>
+                        <button class="col btn btn-primary btn-lg mr-3" type="button" id="calc_calc" aria-label="calcular cuenta">=</button>
+                        <button class="col btn btn-info btn-lg calc_add" type="button" aria-label="multiplicar">*</button>
+                    </div>
+                    <div>
+                        <div class="text-center">
+                            <h5>Historial de Cálculos</h5>
+                            <div class="text-center" id="calc_show_result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="card mt-3">
+    <div class="card-header">
+        <h3 class="mb-0"></h3>
+    </div>
+    <div class="card-body">
+        ¿PARA QUE SIRVE ESTA HERRAMIENTA?<br><br>
+       CON ESTA CALCULADORA PODRAS HACER SUMAS RESTAS Y DIVISION AL IGUAL QUE UNA CALCULADORA FISICA
+        <br><br>
+        OTRA FUNCION QUE PUEDES USAR ES ESTA CALCULADORA CIENTIFICA PARA MAYOR USO <a href="https://calculadora.er/cientifica">Calculadora Cientifica</a>.
+    </div>
+</div>
+</div>
+
+<script src="https://calculadora.ar/sitios/calculadora/libs/jquery.min.js"></script>
+<script src="https://calculadora.ar/sitios/calculadora/libs/bootstrap.bundle.min.js"></script>
+<script src="https://calculadora.ar/vendor/adminux/resources/libs/feather.min.js"></script>
+<script src="https://calculadora.ar/sitios/calculadora/app.1597253677.js"></script>
+</body>
+</html>
